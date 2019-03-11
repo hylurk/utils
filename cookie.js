@@ -1,4 +1,6 @@
 class Cookie {
+  // 获取 cookie
+  // 必传：key
   static get (key) {
     if (!key) return
     const reg = new RegExp('(^| )' + key + '=([^;]*)(;|$)')
@@ -9,6 +11,9 @@ class Cookie {
       return null
     }
   }
+  // 设置 cookie
+  // 必传：key, value
+  // 可选：time
   static set (key, value, time) {
     if (!key) return
     value = value || ''
@@ -20,6 +25,8 @@ class Cookie {
       document.cookie = key + '=' + escape(value)
     }
   }
+  // 删除 cookie
+  // 必传：key
   static del (key) {
     this.set(key, ' ', -1)
   }

@@ -17,3 +17,14 @@ Cookie.get(key)
 // 删除 cookie
 Cookie.del(key)
 ```
+
+### format.js => Format
+
+调用方法：
+
+```js
+import Format from './format.js'
+
+// 小于 10 补 0
+Format.zeroize(n)
+```
