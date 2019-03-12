@@ -28,3 +28,14 @@ import Format from './format.js'
 // 小于 10 补 0
 Format.zeroize(n)
 ```
+
+### once.js => once
+
+调用方法：
+
+```js
+import once from './once.js'
+
+// 确保函数只执行一次
+once(fn)
+```
